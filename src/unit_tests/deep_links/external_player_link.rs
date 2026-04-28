@@ -23,6 +23,7 @@ fn external_player_link_magnet() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -43,6 +44,7 @@ fn external_player_link_http() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -71,6 +73,7 @@ fn external_player_link_torrent() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -112,6 +115,7 @@ fn external_player_link_external() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -132,6 +136,7 @@ fn external_player_link_youtube() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -160,6 +165,7 @@ fn external_player_link_player_frame() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -179,6 +185,7 @@ fn external_player_link_with_vlc_player() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -217,6 +224,7 @@ fn external_player_link_with_mxplayer() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -246,6 +254,7 @@ fn external_player_link_with_justplayer() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -275,6 +284,7 @@ fn external_player_link_with_outplayer() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -304,6 +314,7 @@ fn external_player_link_with_infuse() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };
@@ -335,6 +346,7 @@ fn external_player_link_and_callback_with_vidhub() {
         name: None,
         description: None,
         thumbnail: None,
+        thumbnails: None,
         subtitles: vec![],
         behavior_hints: Default::default(),
     };

@@ -38,6 +38,7 @@ use crate::{runtime::EnvError, types::streams::ConvertedStreamSource};
 ///     name: None,
 ///     description: None,
 ///     thumbnail: None,
+///     thumbnails: None,
 ///     subtitles: vec![],
 ///     behavior_hints: StreamBehaviorHints::default(),
 /// };
@@ -54,6 +55,7 @@ use crate::{runtime::EnvError, types::streams::ConvertedStreamSource};
 ///     "name": null,
 ///     "description": null,
 ///     "thumbnail": null,
+///     "thumbnails": null,
 ///     "subtitles": null,
 ///     "behaviorHints": null,
 /// });
@@ -75,6 +77,8 @@ pub struct Stream<S: StreamSourceTrait = StreamSource> {
     pub description: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub thumbnail: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub thumbnails: Option<String>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     #[serde_as(as = "DefaultOnNull<VecSkipError<_>>")]
     pub subtitles: Vec<Subtitles>,
@@ -127,6 +131,7 @@ impl Stream {
                 name: None,
                 description: None,
                 thumbnail: None,
+                thumbnails: None,
                 subtitles: vec![],
                 behavior_hints: Default::default(),
             })
@@ -154,6 +159,7 @@ impl Stream {
             name: self.name.clone(),
             description: self.description.clone(),
             thumbnail: self.thumbnail.clone(),
+            thumbnails: self.thumbnails.clone(),
             subtitles: self.subtitles.clone(),
             behavior_hints: self.behavior_hints.clone(),
         }
